@@ -1,0 +1,11 @@
+{
+  "name": "reviewvow-site",
+  "compatibility_date": "2026-11-01",
+  "assets": { "directory": "./site" },
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    { "pattern": "reviewvow.com", "custom_domain": true },
+    { "pattern": "www.reviewvow.com", "custom_domain": true }
+  ]
+}

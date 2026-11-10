@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReviewVow: verifiable evidence of how AI is used in your code</title>
+<meta name="description" content="When a customer asks how your team uses AI in your code, ReviewVow gives you a signed evidence pack anyone can verify.">
+<style>
+  :root { --ink:#14181f; --muted:#5a6472; --line:#e3e7ec; --accent:#1f4fd8; --bg:#fafbfc; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; color:var(--ink); background:var(--bg); }
+  main { max-width:44rem; margin:0 auto; padding:4rem 1.25rem 3rem; }
+  .brand { font-weight:700; letter-spacing:.01em; }
+  h1 { font-size:2.2rem; line-height:1.2; margin:2.5rem 0 1rem; }
+  h2 { font-size:1.2rem; margin:2.75rem 0 .5rem; }
+  p { margin:.5rem 0 1rem; }
+  .lede { font-size:1.2rem; color:var(--muted); }
+  .cta { display:inline-block; background:var(--accent); color:#fff; padding:.75rem 1.25rem; border-radius:8px; text-decoration:none; font-weight:600; }
+  ol, ul { padding-left:1.25rem; }
+  li { margin:.4rem 0; }
+  .pack { border:1px solid var(--line); background:#fff; border-radius:10px; padding:1.25rem; font:14px/1.7 ui-monospace,SFMono-Regular,Menlo,monospace; overflow-x:auto; }
+  .note { font-size:.9rem; color:var(--muted); }
+  footer { border-top:1px solid var(--line); margin-top:3rem; padding-top:1rem; font-size:.9rem; color:var(--muted); }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">ReviewVow</div>
+
+  <h1>Customers ask how you use AI in your code. Give them proof, not a paragraph.</h1>
+  <p class="lede">ReviewVow analyzes your repository history and produces a signed evidence pack that a security reviewer can check on their own, without having to trust us or you.</p>
+  <p><a class="cta" href="mailto:hello@reviewvow.com?subject=ReviewVow%20waitlist">Join the waitlist</a></p>
+
+  <h2>Who it's for</h2>
+  <p>Small software vendors who keep getting security questionnaires with questions like "Do you use AI coding tools? How is that code reviewed?" and have no good way to answer.</p>
+
+  <h2>How it will work</h2>
+  <ol>
+    <li><strong>Analyze.</strong> We look at repository history for signals of AI assistance: co-author trailers, agent configuration files, and bot commits.</li>
+    <li><strong>Record.</strong> The result becomes a report with the method and its known limits written next to the numbers.</li>
+    <li><strong>Prove.</strong> The report is hashed and signed so a reviewer can re-verify it independently.</li>
+  </ol>
+
+  <h2>What an evidence pack looks like</h2>
+  <div class="pack">
+    Illustrative sample, not real data<br>
+    repo: example-org/example-app<br>
+    period: 2026-01-01 to 2026-03-31<br>
+    commits analyzed: 1,284<br>
+    commits with AI-assist signals: 212 (16.5%)<br>
+    detection method: v0.1, limits documented<br>
+    signature: pending (sample)
+  </div>
+
+  <h2>Being straight with you</h2>
+  <ul>
+    <li>ReviewVow is in early development. Nothing here is a finished product.</li>
+    <li>Detection from history is not perfect. We will publish how accurate it is, including where it fails.</li>
+    <li>We are working out exactly what access we need to your repositories and will document it before asking for any.</li>
+  </ul>
+
+  <footer>
+    <p>Building in the open. Questions or want to be a design partner? <a href="mailto:hello@reviewvow.com">hello@reviewvow.com</a></p>
+    <p>Security contact: <a href="/.well-known/security.txt">security.txt</a></p>
+  </footer>
+</main>
+</body>
+</html>
