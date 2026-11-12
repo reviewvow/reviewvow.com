@@ -5,12 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ReviewVow: verifiable evidence of how AI is used in your code</title>
 <meta name="description" content="When a customer asks how your team uses AI in your code, ReviewVow gives you a signed evidence pack anyone can verify.">
+<link rel="icon" href="/assets/reviewvow-mark.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ReviewVow">
+<meta property="og:url" content="https://reviewvow.com/">
+<meta property="og:title" content="ReviewVow: verifiable evidence of how AI is used in your code">
+<meta property="og:description" content="When a customer asks how your team uses AI in your code, ReviewVow gives you a signed evidence pack anyone can verify.">
+<meta property="og:image" content="https://reviewvow.com/assets/reviewvow-github-social-1280x640.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@reviewvowhq">
 <style>
   :root { --ink:#14181f; --muted:#5a6472; --line:#e3e7ec; --accent:#1f4fd8; --bg:#fafbfc; }
   * { box-sizing:border-box; }
   body { margin:0; font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; color:var(--ink); background:var(--bg); }
   main { max-width:44rem; margin:0 auto; padding:4rem 1.25rem 3rem; }
-  .brand { font-weight:700; letter-spacing:.01em; }
+  .brand { display:inline-block; line-height:0; }
+  .brand img { display:block; height:30px; width:auto; }
   h1 { font-size:2.2rem; line-height:1.2; margin:2.5rem 0 1rem; }
   h2 { font-size:1.2rem; margin:2.75rem 0 .5rem; }
   p { margin:.5rem 0 1rem; }
@@ -26,7 +38,7 @@
 </head>
 <body>
 <main>
-  <div class="brand">ReviewVow</div>
+  <a class="brand" href="/"><img src="/assets/reviewvow-logo-horizontal.svg" alt="ReviewVow" width="146" height="30"></a>
 
   <h1>Customers ask how you use AI in your code. Give them proof, not a paragraph.</h1>
   <p class="lede">ReviewVow analyzes your repository history and produces a signed evidence pack that a security reviewer can check on their own, without having to trust us or you.</p>
